@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import Logo from "../../assets/logo.png";
 import SearchIcon from "../../assets/search-icon.svg";
 
-const Navbar = () => {
+const Navbar = ({ onSubmit }) => {
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onSubmit(searchTerm);
+  };
+
+  const handleSearchIconClick = () => {
+    if (searchTerm.trim() !== "") {
+      onSubmit(searchTerm);
+    }
+  };
+
   return (
     <div className="navbar">
       {/* Logo */}
@@ -13,8 +26,16 @@ const Navbar = () => {
 
       {/* Search Bar */}
       <div className="search">
-        <input placeholder="Search for movies" />
-        <img src={SearchIcon} alt="search icon" />
+        <input
+          placeholder="Search for movies"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+        <img
+          src={SearchIcon}
+          alt="search icon"
+          onClick={handleSearchIconClick}
+        />
       </div>
     </div>
   );
