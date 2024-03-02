@@ -1,6 +1,15 @@
 /* MovieList.css */
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
-/* Media Query */
-@media screen and (max-width: 600px) {}
+.main .movie-card {
+  margin: 1rem;
+}
 
-@media screen and (max-width: 400px) {}
+.empty {
+  text-align: center;
+  margin-top: 20vh;
+}
