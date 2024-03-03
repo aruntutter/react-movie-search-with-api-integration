@@ -47,6 +47,10 @@ The Movie Search Quest allows users to search for movies using the TMDb (The Mov
 
 ![Screenshot 1](./src/assets/screenshots/Screenshot-04.png)
 
+### Mobile View
+
+![Screenshot 1](./src/assets/screenshots/Screenshot-mobile.png)
+
 ## Technologies Used
 
 - React
