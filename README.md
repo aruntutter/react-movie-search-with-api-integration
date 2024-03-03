@@ -29,7 +29,23 @@ The Movie Search Quest allows users to search for movies using the TMDb (The Mov
 
 ## Screenshots
 
-![Screenshot 1](./src/assets/logo.png)
+### Desktop View
+
+- Homepage
+
+![Screenshot 1](./src/assets/screenshots/Screenshot-01.png)
+
+- Movie Hover
+
+![Screenshot 1](./src/assets/screenshots/Screenshot-02.png)
+
+- Movie Search Results
+
+![Screenshot 1](./src/assets/screenshots/Screenshot-03.png)
+
+- Movie OnClick Details
+
+![Screenshot 1](./src/assets/screenshots/Screenshot-04.png)
 
 ## Technologies Used
 
