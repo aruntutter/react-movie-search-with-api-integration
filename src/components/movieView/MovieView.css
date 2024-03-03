@@ -1,6 +1,166 @@
 /* MovieView.css */
+.movie-view-wrapper {
+  max-width: 70%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.movie-view {
+  padding: 20px;
+  margin: 2rem auto;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid #fff;
+
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  position: relative;
+}
+
+.close-icon {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  cursor: pointer;
+  border: 1px solid #000;
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  transform: translate(0, -50%);
+}
+
+.movie-poster {
+  width: 50%;
+}
+
+.movie-poster img {
+  height: 600px;
+  -o-object-fit: contain;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.movie-info-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* info gap */
+  gap: 3rem;
+  text-align: center;
+}
+
+.movie-info-text {
+  text-align: center;
+}
+
+.movie-info-text h2 {
+  font-size: 3rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.movie-info-text .date-vote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
 
 /* Media Query */
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 615px) {
 
-@media screen and (max-width: 400px) {}
+  .close-icon {
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+
+  .movie-view-wrapper {
+    width: 100vw;
+  }
+
+  .movie-view {
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: none;
+  }
+
+  .movie-poster {
+    width: 100vw;
+    padding: 0 10px;
+  }
+
+  .movie-poster img {
+    height: auto;
+  }
+
+  .movie-info-text {
+    width: 100vw;
+    gap: 3rem;
+  }
+
+}
+
+@media screen and (max-width: 580px) {
+  .movie-info-text {
+    gap: 1.7rem;
+  }
+
+  .movie-info-text h2 {
+    font-size: 2rem;
+  }
+
+  .movie-info-text p {
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width: 458px) {
+  .close-icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  .close-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .movie-info-text {
+    padding: 0 5px;
+    gap: 1.5rem;
+  }
+
+  .movie-info-text p {
+    font-size: 14px;
+  }
+
+  .movie-info-text h2 {
+    font-size: 2rem;
+  }
+
+  .date-vote p {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+  }
+}

@@ -1,11 +1,16 @@
 import React from "react";
 import "./MovieCard.css";
 
-const MovieCard = ({ title, poster_path, vote_average, overview }) => {
+const MovieCard = ({ movie, onClick }) => {
+  const { title, poster_path, vote_average, overview } = movie;
   const img_Url = "https://image.tmdb.org/t/p/w500";
 
+  const handleClick = () => {
+    onClick(movie);
+  };
+
   return (
-    <div className="movie-card">
+    <div className="movie-card" onClick={handleClick}>
       <img src={`${img_Url}${poster_path}`} alt={title} />
       <div className="movie-info">
         <h3>{title}</h3>

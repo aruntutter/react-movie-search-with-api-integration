@@ -37,12 +37,16 @@ const App = () => {
     }
   };
 
+  const handleCloseMovieView = () => {
+    setSelectedMovie(null);
+  };
+
   return (
     <div>
       <Navbar onSubmit={handleSearch} />
 
       {selectedMovie ? (
-        <MovieView movie={selectedMovie} />
+        <MovieView movie={selectedMovie} onClose={handleCloseMovieView} />
       ) : (
         <MovieList movies={movies} onMovieClick={handleMovieClick} />
       )}
