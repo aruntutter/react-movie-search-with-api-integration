@@ -15,7 +15,7 @@
 ## Links
 
 - Solution URL: [GitHub Repository](https://github.com/aruntutter/react-movie-search-with-api-integration)
-- Live Demo: [Live Demo URL](https://visionary-kangaroo-18c8aa.netlify.app/)
+- Live Demo: [Live Demo URL](https://movie-search-quest.netlify.app/)
 
 ## Description
 
