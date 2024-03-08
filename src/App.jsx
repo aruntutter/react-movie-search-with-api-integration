@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import MovieList from "./components/movieList/MovieList";
 import MovieView from "./components/movieView/MovieView";
